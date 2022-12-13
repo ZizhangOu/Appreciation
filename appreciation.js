@@ -1,5 +1,6 @@
 const content = document.getElementById('content')
 const addedBtn = document.getElementById('addedBtn')
+const list = document.getElementById('list')
 
 const listContent = []
 
@@ -14,13 +15,13 @@ addedBtn.addEventListener('click',function(){
 
     listContent.forEach(function(item){
         htmlStr = htmlStr + 
-        '
+        `
         <div class="item">
           <div>
             <p>content：${item.content}</p>
           </div>
         </div>
-        '
+        `
     
 
     })
